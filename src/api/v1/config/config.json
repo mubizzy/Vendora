@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "e-commerce",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "config": {
+      "dialect": "postgres",
+      "host": "localhost",
+      "logging": false,
+      "timezone": "utc",
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    },
+    "migrationStoragePath": "src/api/v1/migrations"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
